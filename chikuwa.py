@@ -24,8 +24,11 @@ class Chikuwa:
 
     def _apply_type(self):
         """種類に応じてスプライトの縦オフセットを設定する。"""
-
-
+        if self.type == 0:
+            self.sprite_v = 0
+        else:
+            self.sprite_v = 8
+                        
     def create(self):
         """ちくわオブジェクトを生成する。"""
         self.y = 0
